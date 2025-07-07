@@ -1,37 +1,7 @@
 # Fire-Alert-System
-Problem Statement: 
 
-Fire accidents frequently occur in industrial setups with flammable materials, electrical gadgets, or complicated machinery. Such setups increase the chances of ignition source meeting with combustible materials resulting in disastrous incidents. Given the convoluted and numerous industrial operations, fire can spread very fast, thus, early detection and prompt responses are needed to mitigate as much damage as possible. Hence the need arises for a reliable automated prototype that would guarantee rapid detection of fire incidents and aid in safe and orderly evacuation of workers with a view to minimizing injury, loss of life, and property damage.
+Aim: 
+This project aims to design and develop an industrial fire safety system capable of detecting hazardous conditions, namely abnormal temperature rise and the presence of flammable gases. The system is designed to give prompt audio and visual alarms to speed up worker evacuation, thus avoiding injury and loss of life, as well as damage or destruction of property. The prototype demonstrates an economical yet dependable way for industrial fire safety by way of microcontroller technology (Arduino Nano), along with temperature and gas sensors, and a simple alarm system consisting of buzzers and LEDs. 
 
-Scope of the Solution: 
-
-The outline solution intends to:
-
-Detect fire accidents automatically at an industrial setup using sensors.
-Raise immediate alerts using LED lights, buzzers, and relays of other alerting devices or pumps, for instance.
-Help in evacuating by automatically directing workers along clear signals.
-Present the system as a working prototype based on microcontrollers so that it can be further implemented as a comprehensive industrial safety system.
-Include provisions for documentation, simulation, and codes for reproduction and further improvements.
-
-Required Components: 
-
-Hardware:
-
-Arduino UNO (microcontroller board)
-Temperature Sensor (LM35, analog, -55°C to 150°C, accuracy ±0.5°C)
-Gas Sensor (MQ-2 detects LPG, smoke, methane, CO, alcohol; analog output, 5V)
-Buzzer (5V active)
-Relay module (5V, single channel)
-LED (5mm red, for visual alert)
-220Ω resistor (for LED current limiting)
-Breadboard (for prototyping)
-Jumper wires  
-
-Software:
-
-Arduino IDE (for coding and uploading firmware)
-TinkerCad (for circuit simulation and diagram)
-EasyEDA (for PCB design and Gerber file generation)
-
-Result:
-A working fire management system which detects fire with the help of the temperature sensor and gas sensor.
+Result: 
+The prototype implemented monitors the environment for high temperatures and concentrations of hazardous gases through the LM35 type temperature sensor and an MQ-2 gas sensor. Whenever these sensors measure values above a certain safety threshold for temperature, say temperature above 50°C, or alternatively, gas concentration above a fixed analog value, in these instances, the system would immediately activate the buzzer as well as the LED to notify the personnel of an existence of a hazard. The system is responsive and can be easily put together; for more complex requirements in industrial safety, the system may be further customized or scaled. Testing has proved a flawless performance from the prototype where it never sounded alerts in non-hazardous situations, thereby providing a real-time manifestation of the automated detection of fire and gas leakage for industries. 
